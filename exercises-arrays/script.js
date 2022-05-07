@@ -39,5 +39,30 @@ let getNLastElementsOfArray = (array, n) => {
 console.log(getNLastElementsOfArray([1, 3, 4, 5, 6, 7, 9, 20], 3))
 // 5. Write a simple JavaScript program to join all elements of the following array into a string. 
 let joinArrayelementsToString = (array) => {
-
+    let newArray = array.join("-")
+    return newArray
 }
+console.log(joinArrayelementsToString(["Zuzanna", "Fin", "Mike", "Albert"]))
+// 6.  Write a JavaScript program which accept a number as input 
+//and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8. 
+let checkifNumbers = (array) => {
+    return array.every(element => {
+        return typeof element === "number"
+    })
+}
+let insertDashesBetweenEvennumbers = (array) => {
+    if (!checkifNumbers(array)) {
+        return console.log("wrong parameter")
+    }
+    let j = 0
+    let outputArray = [...array]
+    for (let i = 0; i < array.length; i++) {
+        j++
+        if ((array[i] % 2 === 0) && (array[i + 1] % 2 === 0)) {
+            outputArray.splice(j, 0, '-');
+            j++
+        }
+    }
+    return console.log(outputArray.join(""))
+}
+insertDashesBetweenEvennumbers([1, 2, 4, 6, 8, 5, 6, 8, 8])
