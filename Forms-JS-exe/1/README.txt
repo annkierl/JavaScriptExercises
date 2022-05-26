@@ -1,0 +1,5 @@
+-Create a form (regular input - type text), and a button to approve the form
+-Underneath, have a TODO list with what to do
+-Save and download data from localStorage
+-After entering the text for input and clicking the Add button, the new value should add to the current list
+- for all: Each item from the list should have a Delete button, which will allow us to remove an item from the current list
