@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "title": "Alice",
+      "content": "What is that?",
+      "author": "Alice",
+      "date": "2022-06-02",
+      "id": 1
+    },
+    {
+      "title": "Test1",
+      "content": "Test Content",
+      "author": "Anna",
+      "date": "2022-03-12",
+      "id": 2
+    },
+    {
+      "title": "testPUT1testPUT1",
+      "content": "testPUT1",
+      "author": "testPUT1",
+      "date": "2022-07-06",
+      "id": 3
+    }
+  ]
+}
